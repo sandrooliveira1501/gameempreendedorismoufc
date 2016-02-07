@@ -31,7 +31,7 @@ public class Teste {
 		
 		Professor prof = new Professor();
 		prof.setLogin(new Long(102013));
-		prof.setEmail("germanarolim@gmail.com");
+		prof.setEmail("professor@gmail.com");
 		prof.setNome("Professor");
 		prof.setSenha("123");
 		
