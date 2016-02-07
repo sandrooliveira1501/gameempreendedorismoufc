@@ -1,0 +1,104 @@
+<ui:composition template="/WEB-INF/template/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+	<ui:define name="information">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h4 class="panel-title">#{usuario.nome}</h4>
+			</div>
+			<div class="panel-body">
+				<img
+					src="#{facesContext.externalContext.requestContextPath}/resources/images/noavatar.jpg"
+					alt="no-avatar" />
+				<h5>#{usuario.login}</h5>
+				<h5>#{usuario.email}</h5>
+			</div>
+		</div>
+	</ui:define>
+
+	<ui:define name="menu1">
+		<ui:include src="/WEB-INF/template/menuProfessor.xhtml" />
+	</ui:define>
+
+	<ui:define name="main1">
+
+		<h:dataTable value="#{equipeBean.equipes}" class="table table-striped"
+			var="equipe" emptyMessage="Sem equipes cadastradas">
+			<h:column>
+				<f:facet name="header">Equipe</f:facet>
+				#{equipe.nome}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Participantes</f:facet>
+				<p:dialog header="Participantes" widgetVar="dlg#{equipe.id}"
+					modal="true" width="500" resizable="false">
+
+					<p:dataTable value="#{equipe.alunos}" var="aluno"
+						emptyMessage="Sem alunos nessa equipe">
+						<p:column headerText="Nome">
+								#{aluno.nome}
+							</p:column>
+						<p:column headerText="Matrícula">
+								#{aluno.login}
+							</p:column>
+						<p:column headerText="E-mail">
+								#{aluno.email}
+							</p:column>
+					</p:dataTable>
+				</p:dialog>
+				<a href="#" onclick="dlg#{equipe.id}.show()">Participantes</a>
+			</h:column>
+			<h:column>
+				<h:form>
+					<h:commandLink class="btn btn-primary"
+						value="Visualizar Questionário"
+						action="#{questionarioBean.preparaResposta}">
+						<f:param name="id_equipe" value="#{equipe.id}" />
+						<f:param name="nome_equipe" value="#{equipe.nome}" />
+						<f:param name="id_form" value="#{flash.form}" />
+					</h:commandLink>
+				</h:form>
+			</h:column>
+
+			<h:column>
+				
+				<a href="#" onclick="dlg2#{equipe.id}.show()">Apostas</a>
+				
+				<p:dialog header="#{equipe.nome}" 
+				widgetVar="dlg2#{equipe.id}" modal="true" width="400"
+		resizable="true">
+				
+					<h:form>
+					
+						<h:panelGrid columns="2">
+							
+							<h:outputLabel value="Fator :" for="fator"  />
+							<h:inputText style="width:80px; height:30px" value="#{fatorEquipeBean.fatorEquipe.fator}" id="fator" >
+								<f:convertNumber locale="pt_BR" />
+							</h:inputText>
+							
+							<h:commandButton action="#{fatorEquipeBean.adicionarFator}" value="Confirmar" class="btn btn-primary" >
+								<f:param name="id_equipe" value="#{equipe.id}" />
+								<f:param name="id_form" value="#{flash.form}" />
+							</h:commandButton>
+							
+						</h:panelGrid>
+
+					</h:form>
+				
+				</p:dialog>
+				
+			</h:column>
+
+
+		</h:dataTable>
+		<hr />
+
+	</ui:define>
+
+</ui:composition>

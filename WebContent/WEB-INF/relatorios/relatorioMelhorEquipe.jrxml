@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report2" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c3d57027-2819-4d42-8142-e2f708a880cd">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#0088FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#E6F3FF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="e59802e7-f1ab-4205-9e01-1777e8f42dd0"/>
+	<parameter name="formulario" class="java.lang.Double">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select distinct(e.nome), sum(a.valor*f.fator) as soma, a.id_formulario, f.fator
+	from aposta a
+	inner join fatorequipe f on f.id_equipe = a.id_equipe
+	inner join equipe e on e.id = a.id_equipe
+	where a.id_formulario = f.id_formulario
+	and a.id_formulario = $P{formulario}
+	group by e.nome, a.id_formulario, f.fator
+	order by a.id_formulario, soma desc]]>
+	</queryString>
+	<field name="nome" class="java.lang.String"/>
+	<field name="soma" class="java.lang.Double"/>
+	<field name="id_formulario" class="java.lang.Integer"/>
+	<field name="fator" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="55" splitType="Stretch">
+			<rectangle radius="5">
+				<reportElement uuid="5827fe88-2d0b-4589-950d-5bf60f644cec" x="0" y="0" width="752" height="55" forecolor="#FFFFFF" backcolor="#2438E7"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="ab4975ab-6e1f-42ee-8cce-b9c03b6de421" x="105" y="0" width="453" height="55" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[Melhores Equipes (Etapa]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="ed6dfb96-f8a1-45c4-83b4-32c2fa9d2738" x="556" y="0" width="50" height="55" forecolor="#FFFFFF"/>
+				<textElement verticalAlignment="Middle">
+					<font size="36"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_formulario}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="609dd1cc-aaef-4336-a9d7-698e998da87d" x="573" y="0" width="27" height="55" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[)]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="f453168c-f39d-4efb-abc8-e2722e0f81f7" x="5" y="17" width="100" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="84c63fc1-6129-4d76-9a62-a0fb09f70f94" x="364" y="17" width="100" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Valor]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="d2e9fde7-7ecb-40ed-9b48-7914549f3529" x="0" y="36" width="752" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="7cc39a81-e8e2-4606-a229-0472c60b8ed7" x="239" y="16" width="100" height="20"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fator]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<rectangle radius="5">
+				<reportElement uuid="827762f0-d09b-48bc-8c00-d338f64d58aa" x="0" y="0" width="752" height="28" forecolor="#FFFFFF" backcolor="#A6BAF0">
+					<printWhenExpression><![CDATA[new Boolean(($V{COLUMN_COUNT}.intValue() % 2) == 0)]]></printWhenExpression>
+				</reportElement>
+			</rectangle>
+			<textField>
+				<reportElement uuid="80be5844-8378-4b35-8391-046634902405" x="5" y="0" width="234" height="28"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ddd5c1da-8161-4c96-a3c1-00f5395dd4a9" x="364" y="0" width="100" height="28"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{soma}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6936e360-5535-4ab7-a85d-12a12c3dddd9" x="239" y="0" width="100" height="28"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fator}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,30 @@
+<ui:composition template="/WEB-INF/template/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+	<ui:define name="information">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h4 class="panel-title">#{usuario.nome}</h4>
+			</div>
+			<div class="panel-body">
+				<img
+					src="#{facesContext.externalContext.requestContextPath}/resources/images/noavatar.jpg"
+					alt="no-avatar" />
+				<h5>Matrícula: #{usuario.login}</h5>
+				<h5>#{usuario.email}</h5>
+			</div>
+
+		</div>
+	</ui:define>
+	<ui:define name="menu1">
+		<ui:include src="/WEB-INF/template/menuAluno.xhtml" />
+	</ui:define>
+	<ui:define name="main1">
+		<h1>Bem Vindo!</h1>
+		<h3>Game desenvolvido para a disciplina de Empreendedorismo</h3>
+	</ui:define>
+
+</ui:composition>

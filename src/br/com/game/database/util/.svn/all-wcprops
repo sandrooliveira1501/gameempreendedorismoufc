@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/23/trunk/src/br/com/game/database/util
+END
+JPAUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/src/br/com/game/database/util/JPAUtil.java
+END
+OpcoesResposta.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/2/trunk/src/br/com/game/database/util/OpcoesResposta.java
+END
+SenhaCriptografada.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2/trunk/src/br/com/game/database/util/SenhaCriptografada.java
+END
+ReportUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/23/trunk/src/br/com/game/database/util/ReportUtil.java
+END

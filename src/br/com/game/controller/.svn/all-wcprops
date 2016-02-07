@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/23/trunk/src/br/com/game/controller
+END
+ApostaBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/23/trunk/src/br/com/game/controller/ApostaBean.java
+END
+ProfessorBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12/trunk/src/br/com/game/controller/ProfessorBean.java
+END
+QuestionarioBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/23/trunk/src/br/com/game/controller/QuestionarioBean.java
+END
+AlunoBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/20/trunk/src/br/com/game/controller/AlunoBean.java
+END
+LoginBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/20/trunk/src/br/com/game/controller/LoginBean.java
+END
+EquipeBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/src/br/com/game/controller/EquipeBean.java
+END
+PerguntaFormBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/22/trunk/src/br/com/game/controller/PerguntaFormBean.java
+END
+FormularioBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/22/trunk/src/br/com/game/controller/FormularioBean.java
+END
+FatorEquipeBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/17/trunk/src/br/com/game/controller/FatorEquipeBean.java
+END

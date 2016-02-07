@@ -1,0 +1,77 @@
+10
+
+dir
+24
+https://empreendedorismo-game-ufc.googlecode.com/svn/trunk/src/br/com/game
+https://empreendedorismo-game-ufc.googlecode.com/svn
+
+
+
+2014-03-13T01:49:32.678558Z
+23
+alex.palestra@gmail.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5f16f40c-0cca-d03e-a689-e42b260d8826
+
+Teste.java
+file
+
+
+
+
+2014-11-21T16:29:48.000000Z
+25e3c8add05d88fb5de6971ff98bc939
+2014-03-13T01:49:32.678558Z
+23
+alex.palestra@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1071
+
+controller
+dir
+
+converter
+dir
+
+database
+dir
+
+exceptions
+dir
+
+filter
+dir
+

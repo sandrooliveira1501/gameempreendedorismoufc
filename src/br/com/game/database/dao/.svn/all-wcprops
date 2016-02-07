@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/23/trunk/src/br/com/game/database/dao
+END
+GenericJPADao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2/trunk/src/br/com/game/database/dao/GenericJPADao.java
+END
+EquipeJPADao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/23/trunk/src/br/com/game/database/dao/EquipeJPADao.java
+END
+FormularioJPADao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/23/trunk/src/br/com/game/database/dao/FormularioJPADao.java
+END
+FatorEquipeJPADao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/16/trunk/src/br/com/game/database/dao/FatorEquipeJPADao.java
+END
+AlunoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/src/br/com/game/database/dao/AlunoDao.java
+END
+PerguntaJPADao.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/9/trunk/src/br/com/game/database/dao/PerguntaJPADao.java
+END
+ProfessorJPADao.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/9/trunk/src/br/com/game/database/dao/ProfessorJPADao.java
+END
+UsuarioJPADao.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/20/trunk/src/br/com/game/database/dao/UsuarioJPADao.java
+END
+UsuarioDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2/trunk/src/br/com/game/database/dao/UsuarioDao.java
+END
+ProfessorDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2/trunk/src/br/com/game/database/dao/ProfessorDao.java
+END
+PerguntaDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/9/trunk/src/br/com/game/database/dao/PerguntaDao.java
+END
+AlunoJPADao.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2/trunk/src/br/com/game/database/dao/AlunoJPADao.java
+END
+FatorEquipeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/15/trunk/src/br/com/game/database/dao/FatorEquipeDao.java
+END
+FormularioDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/11/trunk/src/br/com/game/database/dao/FormularioDao.java
+END
+EquipeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/src/br/com/game/database/dao/EquipeDao.java
+END
+GenericDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2/trunk/src/br/com/game/database/dao/GenericDao.java
+END
+RespostaJPADao.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2/trunk/src/br/com/game/database/dao/RespostaJPADao.java
+END
+ApostaJPADao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/15/trunk/src/br/com/game/database/dao/ApostaJPADao.java
+END
+ApostaDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/15/trunk/src/br/com/game/database/dao/ApostaDao.java
+END
+RespostaDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2/trunk/src/br/com/game/database/dao/RespostaDao.java
+END

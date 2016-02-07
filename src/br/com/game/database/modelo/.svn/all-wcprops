@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/23/trunk/src/br/com/game/database/modelo
+END
+Pergunta.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/23/trunk/src/br/com/game/database/modelo/Pergunta.java
+END
+Aposta.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/18/trunk/src/br/com/game/database/modelo/Aposta.java
+END
+Professor.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2/trunk/src/br/com/game/database/modelo/Professor.java
+END
+Usuario.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/20/trunk/src/br/com/game/database/modelo/Usuario.java
+END
+Aluno.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/16/trunk/src/br/com/game/database/modelo/Aluno.java
+END
+PontuacaoRodada.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/9/trunk/src/br/com/game/database/modelo/PontuacaoRodada.java
+END
+Equipe.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/8/trunk/src/br/com/game/database/modelo/Equipe.java
+END
+Formulario.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/23/trunk/src/br/com/game/database/modelo/Formulario.java
+END
+Resposta.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/23/trunk/src/br/com/game/database/modelo/Resposta.java
+END
+FatorEquipe.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/13/trunk/src/br/com/game/database/modelo/FatorEquipe.java
+END

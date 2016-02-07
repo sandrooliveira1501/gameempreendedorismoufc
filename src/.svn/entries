@@ -1,0 +1,71 @@
+10
+
+dir
+24
+https://empreendedorismo-game-ufc.googlecode.com/svn/trunk/src
+https://empreendedorismo-game-ufc.googlecode.com/svn
+
+
+
+2014-03-13T01:49:32.678558Z
+23
+alex.palestra@gmail.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5f16f40c-0cca-d03e-a689-e42b260d8826
+
+META-INF
+dir
+
+br
+dir
+
+log4j.properties
+file
+
+
+
+
+2014-11-21T16:29:48.000000Z
+62873212e29e545d63331e5799080ebf
+2013-09-22T01:09:42.348997Z
+2
+sandrooliveira1501@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+220
+
+resources
+dir
+
